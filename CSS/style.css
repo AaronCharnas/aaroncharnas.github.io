@@ -1,0 +1,82 @@
+/* Name Header */
+
+body {
+  margin: 0;
+  font-family: 'Public Sans', sans-serif;
+  color: #F1401E;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+h1 {
+  margin: 0;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+/*Top Buttons*/
+
+.nav-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.nav-buttons a {
+  padding: 10px 20px;
+  /* font-family: "Lobster", sans-serif; */
+  font-family: 'Public Sans', sans-serif;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #F1401E;
+  color: white;
+  box-shadow: 0 4px 6px #333;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.nav-buttons a:hover {
+  background-color: #c55353;
+}
+
+/* Central Photo */
+.profile-photo {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.profile-photo img {
+  width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px #333; /* optional drop shadow */
+}
+
+/* About text */
+.about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.about-section h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  align-self: flex-start;
+}
+
+.about-section p {
+  max-width: 600px;
+  font-size: 18px;
+  line-height: 1.6;
+}
