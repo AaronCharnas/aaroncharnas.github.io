@@ -21,7 +21,7 @@ h1 {
 /*Top Buttons*/
 
 .nav-buttons {
-  margin-top: 20px;
+  margin-top: 10px;
   display: flex;
   justify-content: center;
   gap: 50px;
@@ -79,4 +79,5 @@ h1 {
   max-width: 1000px;
   font-size: 18px;
   line-height: 1.6;
+  margin-bottom: 200px;
 }
