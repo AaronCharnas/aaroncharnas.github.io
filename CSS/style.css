@@ -4,7 +4,7 @@ body {
   margin: 0;
   font-family: 'Public Sans', sans-serif;
   color: #F1401E;
-}
+  }
 
 header {
   text-align: center;
@@ -43,7 +43,6 @@ footer {
   border-radius: 5px;
   background-color: #F1401E;
   color: white;
-  box-shadow: 0 4px 6px #333;
   text-decoration: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -63,7 +62,6 @@ footer {
 .profile-photo img {
   width: 1000px;
   border-radius: 10px;
-  box-shadow: 0 4px 12px #333; /* optional drop shadow */
 }
 
 /* About text */
@@ -91,7 +89,7 @@ footer {
 
 /* footer buttons */
 
-.nav-footer a {
+.nav-footer a, button {
   padding: 10px 10px;
   /* font-family: "Lobster", sans-serif; */
   font-family: 'Public Sans', sans-serif;
@@ -100,7 +98,6 @@ footer {
   border-radius: 5px;
   background-color: #F1401E;
   color: white;
-  box-shadow: 0 4px 6px #333;
   text-decoration: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -108,4 +105,39 @@ footer {
 
 .nav-footer a:hover {
   background-color: #c55353;
+}
+
+/* Dark Mode */
+html, body, header, nav, footer, button {
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* Dark Mode styles triggered by class on html */
+.dark-mode {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+.dark-mode header {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+.dark-mode .about-section p, 
+.dark-mode .about-section h2 {
+  color: white;
+}
+
+.dark-mode a,
+.dark-mode button {
+  background-color: #363636;
+  color: white;
+}
+
+.dark-mode a:hover {
+  background-color: #3f3f3f;
+}
+
+.dark-mode button:hover {
+  background-color: #3f3f3f;
 }
