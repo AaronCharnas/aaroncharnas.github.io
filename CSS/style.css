@@ -62,6 +62,8 @@ footer {
 .profile-photo img {
   width: 1000px;
   border-radius: 10px;
+  border: 2px solid #1e1e1e;
+  border-radius: 12px;
 }
 
 /* About text */
