@@ -19,10 +19,14 @@ h1 {
 }
 
 footer {
-  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 1000px;
+  margin: 0 auto;
   padding-top: 30px;
-  padding-left: 455px;
   padding-bottom: 50px;
+  width: 100%;  
 }
 
 /*Top Buttons*/
@@ -36,7 +40,6 @@ footer {
 
 .nav-buttons a {
   padding: 10px 20px;
-  /* font-family: "Lobster", sans-serif; */
   font-family: 'Public Sans', sans-serif;
   font-size: 20px;
   border: none;
@@ -56,14 +59,49 @@ footer {
 .profile-photo {
   display: flex;
   justify-content: center;
-  margin-top: 25px;
 }
 
 .profile-photo img {
   width: 1000px;
   border-radius: 10px;
   border: 2px solid #1e1e1e;
-  border-radius: 12px;
+}
+
+.content-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.button-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  justify-content: center;
+}
+
+.button1 {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  color: white;
+}
+
+.button1 img {
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.text-box {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: rgba(255, 255, 255, 0.85);
+  color: black;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 14px;
 }
 
 /* About text */
@@ -93,7 +131,6 @@ footer {
 
 .nav-footer a, button {
   padding: 10px 10px;
-  /* font-family: "Lobster", sans-serif; */
   font-family: 'Public Sans', sans-serif;
   font-size: 20px;
   border: none;

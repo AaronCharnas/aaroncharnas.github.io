@@ -1,25 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script>
+      if(localStorage.getItem('theme') === 'dark'){
+        document.documentElement.classList.add('dark-mode');
+      }
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aaron's Projects</title>
+    <title>Aaron's Resume</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="shortcut icon" href="images/friend.ico" type="image/x-icon" />
+    <script>
+      if(localStorage.getItem('theme') === 'dark'){
+        document.documentElement.classList.add('dark-mode');
+      }
+    </script>
 </head>
 <body>
-    <header>
-    <h1>Aaron Charnas</h1>
-    <nav class="nav-buttons">
-        <a href="index.html">Home</a>
-        <a href="resume.html">Resume</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-    </header>
+  <header>
+  <h1>Projects</h1>
+  <nav class="nav-buttons">
+    <a href="index.html">Home</a>
+    <a href="resume.html">Resume</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  </header>
+  <div class="content-container">
+    <div class="button-container">
+    <a class="button1" href="https://github.com/grcodeman/cs5821-nfl">
+      <div class="text-box">
+        <p>CS5821 NFL Over/Under Predictor</p>
+      </div>
+      <img alt="Football" src="images/football.webp" width="325" height="215">
+    </a>
+    <a class="button1" href="https://github.com/AaronCharnas">
+      <div class="text-box">
+        <p>Github</p>
+      </div>
+      <img alt="Github" src="images/Github.webp" width="325" height="216">
+    </a>
+    <a class="button1" href="https://aaroncharnas.github.io/">
+      <div class="text-box">
+        <p>Website</p>
+      </div>
+      <img alt="Website" src="images/Github.webp" width="325" height="216">
+    </a>
+    <a class="button1" href="https://github.com/AaronCharnas">
+      <div class="text-box">
+        <p>Test</p>
+      </div>
+      <img alt="Test" src="images/Github.webp" width="325" height="216">
+    </a>
+    </div>
+  </div>
+
+  <footer>
+  <nav class="nav-footer">
+    <a href="mailto:aaron.j.charnas@wmich.edu"><i class="fa-solid fa-envelope"></i></a>
+    <a href="https://www.linkedin.com/in/aaron-charnas/"><i class="fa-brands fa-linkedin-in"></i></a>
+    <a href="https://github.com/AaronCharnas"><i class="fa-brands fa-github"></i></a>
+    <button id="theme-toggle"><i class="fa-solid fa-moon"></i></button>
+  </nav>
+</footer>
+  <script src="js/main.js"></script>
+  <script src="theme-toggle.js"></script>
 </body>
 </html>
