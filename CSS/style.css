@@ -67,6 +67,32 @@ footer {
   border: 2px solid #1e1e1e;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.RequestBox input {
+  padding: 10px 15px;
+  font-family: 'Public Sans', sans-serif;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #F1401E;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.RequestBox input:hover {
+  background-color: #c55353;
+}
+
 .content-container {
   max-width: 1000px;
   margin: 0 auto;
@@ -147,7 +173,7 @@ footer {
 }
 
 /* Dark Mode */
-html, body, header, nav, footer, button {
+html, body, header, nav, footer, button, p, h1, h2, a, input, textarea, form {
   transition: background-color 0.4s ease, color 0.4s ease;
 }
 
@@ -163,20 +189,23 @@ html, body, header, nav, footer, button {
 }
 
 .dark-mode .about-section p, 
-.dark-mode .about-section h2 {
+.dark-mode .about-section h2,
+.dark-mode form,
+.dark-mode textarea {
   color: white;
 }
 
 .dark-mode a,
-.dark-mode button {
+.dark-mode button,
+.dark-mode input,
+.dark-mode textarea {
   background-color: #363636;
   color: white;
 }
 
-.dark-mode a:hover {
-  background-color: #3f3f3f;
-}
-
-.dark-mode button:hover {
+.dark-mode a:hover,
+.dark-mode button:hover,
+.dark-mode input:hover,
+.dark-mode textarea:hover {
   background-color: #3f3f3f;
 }

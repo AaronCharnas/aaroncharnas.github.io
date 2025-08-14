@@ -33,11 +33,39 @@
   </nav>
   </header>
 
+  <form action="https://formspree.io/f/xvgqygea" method="post">
+    <div class="emailBox">
+      <label for="emailAddress">Your email address</label><br />
+      <input
+        id="emailAddress"
+        name="email"
+        type="email"
+        size="64"
+        maxlength="64"
+        required
+        placeholder="username@example.com" />
+    </div>
+
+    <div class="messageBox">
+      <label for="message">Request</label><br />
+      <textarea
+        id="message"
+        name="message"
+        cols="133"
+        rows="17"
+        required
+        placeholder="Type your message here..."></textarea>
+    </div>
+    <div class="RequestBox">
+      <input type="submit" value="Send Request" />
+    </div>
+  </form>
+
   <footer>
   <nav class="nav-footer">
     <a href="mailto:aaron.j.charnas@wmich.edu"><i class="fa-solid fa-envelope"></i></a>
-    <a href="https://www.linkedin.com/in/aaron-charnas/"><i class="fa-brands fa-linkedin-in"></i></a>
-    <a href="https://github.com/AaronCharnas"><i class="fa-brands fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/aaron-charnas/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+    <a href="https://github.com/AaronCharnas" target="_blank"><i class="fa-brands fa-github"></i></a>
     <button id="theme-toggle"><i class="fa-solid fa-moon"></i></button>
   </nav>
 </footer>
