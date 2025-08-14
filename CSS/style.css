@@ -1,10 +1,9 @@
 /* Name Header */
-
 body {
   margin: 0;
   font-family: 'Public Sans', sans-serif;
   color: #F1401E;
-  }
+}
 
 header {
   text-align: center;
@@ -30,12 +29,12 @@ footer {
 }
 
 /*Top Buttons*/
-
 .nav-buttons {
   margin-top: 10px;
   display: flex;
   justify-content: center;
   gap: 50px;
+  flex-wrap: wrap;
 }
 
 .nav-buttons a {
@@ -79,18 +78,20 @@ footer {
   margin-bottom: 20px;
 }
 
-/* Central Photo */
 .pdfbutton a:hover {
   background-color: #c55353;
 }
 
+/* Central Photo */
 .profile-photo {
   display: flex;
   justify-content: center;
 }
 
 .profile-photo img {
-  width: 1000px;
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
   border-radius: 10px;
   border: 2px solid #1e1e1e;
 }
@@ -153,6 +154,8 @@ form {
 .button1 img {
   display: block;
   width: 100%;
+  height: auto;
+  object-fit: cover;
   border-radius: 5px;
 }
 
@@ -191,7 +194,6 @@ form {
 }
 
 /* footer buttons */
-
 .nav-footer a, button {
   padding: 10px 10px;
   font-family: 'Public Sans', sans-serif;
@@ -214,7 +216,7 @@ html, body, header, nav, footer, button, p, h1, h2, a, input, textarea, form {
   transition: background-color 0.4s ease, color 0.4s ease;
 }
 
-/* Dark Mode styles triggered by class on html */
+/* styles triggered */
 .dark-mode {
   background-color: #1e1e1e;
   color: white;
@@ -245,4 +247,68 @@ html, body, header, nav, footer, button, p, h1, h2, a, input, textarea, form {
 .dark-mode input:hover,
 .dark-mode textarea:hover {
   background-color: #3f3f3f;
+}
+
+/*  Mobile Friendly */
+@media (max-width: 768px) {
+  .button-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 32px;
+  }
+  .nav-buttons a,
+  .pdfbutton a,
+  .RequestBox input,
+  .nav-footer a {
+    font-size: 16px;
+    padding: 8px 12px;
+  }
+  .button-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav-buttons {
+    gap: 20px;
+  }
+  .nav-buttons a {
+    font-size: 16px;
+    padding: 8px 12px;
+  }
+}
+
+@media (max-width: 700px) {
+  form {
+    max-width: 100%;
+    padding: 0 12px;
+  }
+  .emailBox,
+  .messageBox,
+  .RequestBox {
+    width: 100%;
+  }
+  .emailBox input,
+  .messageBox textarea {
+    display: block;
+    width: 100% !important;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  .messageBox textarea {
+    height: 160px;
+    resize: vertical;
+  }
+  .RequestBox input {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+    padding: 10px 14px;
+  }
 }
