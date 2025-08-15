@@ -263,7 +263,8 @@ html, body, header, nav, footer, button, p, h1, h2, a, input, textarea, form {
   .nav-buttons a,
   .pdfbutton a,
   .RequestBox input,
-  .nav-footer a {
+  .nav-footer a,
+  .nav-footer button {
     font-size: 16px;
     padding: 8px 12px;
   }
@@ -274,11 +275,11 @@ html, body, header, nav, footer, button, p, h1, h2, a, input, textarea, form {
 
 @media (max-width: 600px) {
   .nav-buttons {
-    gap: 20px;
+    gap: 15px;
   }
   .nav-buttons a {
     font-size: 16px;
-    padding: 8px 12px;
+    padding: 6px 10px;
   }
 }
 
@@ -310,5 +311,14 @@ html, body, header, nav, footer, button, p, h1, h2, a, input, textarea, form {
     box-sizing: border-box;
     font-size: 16px;
     padding: 10px 14px;
+  }
+}
+@media (max-width: 400px) {
+  .nav-buttons {
+    gap: 8px;
+  }
+  .nav-buttons a {
+    font-size: 16px;
+    padding: 8px 10px;
   }
 }
